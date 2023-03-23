@@ -37,7 +37,7 @@ def main():
         param_angular = sys.argv[2]
         print(f"Requested linear and angular velocities: {param_linear}, {param_angular}")
     else:
-        print("Not all parameters were sent, working with default linear and angular velocities")
+        print("Not all parameters were set, working with default linear and angular velocities")
     
     ninja = NinjaTurtle(param_linear, param_angular)
     rclpy.spin(ninja)
